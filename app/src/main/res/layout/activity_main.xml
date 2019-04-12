@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type And Run"
+        android:textSize="30dp" />
+
+        <TextView
+            style="@style/vtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make:" />
+
+        <EditText
+            android:id="@+id/nameID"
+            style="@style/etext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/vtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year:" />
+
+        <EditText
+            android:id="@+id/yearID"
+            style="@style/etext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/vtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color:" />
+
+        <EditText
+            android:id="@+id/colorID"
+            style="@style/etext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/vtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchase(£):" />
+
+        <EditText
+            android:id="@+id/purchaseID"
+            style="@style/etext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/vtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine size(litre):"/>
+
+        <EditText
+            android:id="@+id/engineID"
+            style="@style/etext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/btn"
+            android:id="@+id/carID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:text="Create Car"/>
+
+        <Button
+            android:id="@+id/dieselID"
+            style="@style/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Diesel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#C0C0C0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/vtext"
+                android:id="@+id/displayID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
