@@ -41,10 +41,30 @@ public class MainActivity extends AppCompatActivity {
                 double price = Double.parseDouble(cost.getText().toString());
                 arrayCount++;
                 String heading = "This is vehicle no." + arrayCount + "\n";
-                String content = "Manufacture: " + carname + "| Year: "+date+ " | Color: " + colour + " " +
-                                 "\n" +"Price: " + price + " | Engine Size" + eng+"\n"+"\n" ;
+                String content = "Manufacture: " + carname +"\n"+"Year: "+date+"\n"+" Color: " + colour +
+                                 "\n" +"Price: " + price +"\n"+ "Engine Size: " + eng+"\n"+"\n" ;
                 displayTXT.append(heading + content);
             }
+        });
+
+        dieselCreate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int distance = 5;
+                int diesel;
+                diesel = (int) (distance*(Float.parseFloat(engine.getText().toString())));
+                String carname = name.getText().toString();
+                int date = Integer.parseInt(year.getText().toString());
+                String colour = color.getText().toString();
+                double eng = Double.parseDouble(engine.getText().toString());
+                double price = Double.parseDouble(cost.getText().toString());
+                arrayCount++;
+                String heading = "This is vehicle no." + arrayCount + "\n";
+                String content = "Manufacture: " + carname +"\n"+"Year: "+date+"\n"+"Color: " + colour +
+                                 "\n" +"Price: " + price +"\n"+"Engine Size: " + eng +"\n"+"Diesel Required(in Ltr):"+diesel+"\n"+"\n" ;
+                displayTXT.append(heading + content);
+            }
+
         });
     }
     private boolean Validate() {
@@ -75,4 +95,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
 }

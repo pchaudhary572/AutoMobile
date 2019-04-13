@@ -40,7 +40,8 @@
             android:id="@+id/yearID"
             style="@style/etext"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
 
         <TextView
             style="@style/vtext"
@@ -58,13 +59,14 @@
             style="@style/vtext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Purchase(£):" />
+            android:text="Purchase(£):"/>
 
         <EditText
             android:id="@+id/purchaseID"
             style="@style/etext"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
 
         <TextView
             style="@style/vtext"
@@ -76,7 +78,8 @@
             android:id="@+id/engineID"
             style="@style/etext"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
 
     </LinearLayout>
 
